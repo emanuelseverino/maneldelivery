@@ -6,11 +6,10 @@ import { pageview } from "@/src/lib/pixel"
 
 export default function FacebookPixel(): null {
   const pathname = usePathname()
-  const searchParams = useSearchParams()
 
   useEffect(() => {
     pageview()
-  }, [pathname, searchParams])
+  }, [pathname])
 
   return null
 }
